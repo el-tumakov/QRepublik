@@ -45,7 +45,7 @@ const Header = () => {
         </li>
         <li>
           <Link href="#">
-            <a className={styles.button && styles.buttonSignUp}>Войти</a>
+            <a className={styles.buttonSignUp}>Войти</a>
           </Link>
         </li>
       </ul>

@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "../header/header";
+import Footer from "../footer/footer";
 
 const Layout = (props) => {
   const {children} = props;
@@ -32,6 +33,7 @@ const Layout = (props) => {
       </Head>
       <Header />
       {children}
+      <Footer />
     </>
   );
 };
