@@ -1,0 +1,37 @@
+@import "./variables.scss";
+
+@mixin wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+@mixin button {
+  @include interactive;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 72px;
+  padding: 10px;
+
+  font-size: 21px;
+  line-height: 25px;
+  color: $font-light;
+  text-transform: uppercase;
+
+  background-color: $main-accent;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+@mixin interactive {
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}

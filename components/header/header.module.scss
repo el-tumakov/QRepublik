@@ -1,0 +1,99 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.header {
+  @include wrapper;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 34px;
+
+  font-size: 16px;
+  line-height: 19px;
+  color: $font-semidark;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 691px;
+  margin-top: 5px;
+}
+
+.logo {
+  @include interactive;
+
+  flex-shrink: 0;
+  width: 230px;
+}
+
+.navList,
+.loginList {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.navList {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  text-transform: uppercase;
+}
+
+.navItem {
+  margin-bottom: 5px;
+  margin-left: 43px;
+}
+
+.link {
+  @include interactive;
+}
+
+.locale {
+  @include interactive;
+
+  margin-right: 40px;
+  margin-left: auto;
+  padding: 0;
+  padding-right: 18px;
+
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+
+  background: transparent;
+  background-image: url("../../public/images/select.svg");
+  background-repeat: no-repeat;
+  background-position: 100% center;
+  border: none;
+  cursor: pointer;
+}
+
+.button,
+.buttonSignUp {
+  @include button;
+
+  width: 221px;
+  min-height: 41px;
+
+  font-size: inherit;
+  line-height: inherit;
+  text-transform: none;
+
+  border-radius: 6px;
+}
+
+.buttonSignUp {
+  width: 110px;
+  margin-left: 21px;
+
+  color: $main-accent;
+
+  background-color: transparent;
+  border: 2px solid $main-accent;
+}
