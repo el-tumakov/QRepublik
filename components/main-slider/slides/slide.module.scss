@@ -1,0 +1,116 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.slide {
+  @include wrapper;
+
+  display: flex;
+  flex-direction: column;
+  height: 757px;
+}
+
+.title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 88px;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.description {
+  width: 588px;
+  margin: 21px 0;
+
+  font-size: 24px;
+  line-height: 32px;
+  color: $font-main;
+}
+
+.link {
+  @include button;
+
+  width: 245px;
+  margin-top: 24px;
+}
+
+.table {
+  min-height: 156px;
+  margin-top: auto;
+
+  border-collapse: collapse;
+}
+
+.tableBody {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin tableRow {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.titlesRow {
+  @include tableRow;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+  color: $font-main;
+}
+
+.valuesRow {
+  @include tableRow;
+
+  order: -1;
+  margin-left: 4px;
+
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  color: $font-semidark;
+}
+
+@mixin tableCell {
+  padding: 0;
+}
+
+.table th {
+  font-weight: 400;
+}
+
+.titleOne,
+.valueOne {
+  @include tableCell;
+
+  width: 250px;
+  margin-right: 44px;
+}
+
+.titleTwo,
+.valueTwo {
+  @include tableCell;
+
+  width: 279px;
+  margin-right: 28px;
+}
+
+.titleThree,
+.valueThree {
+  @include tableCell;
+
+  width: 319px;
+}
+
+.valueType {
+  font-size: 33px;
+}
+
+.table sup {
+  font-size: 33px;
+}

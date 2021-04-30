@@ -34,7 +34,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <button className={styles.locale} type="button">
+      <button className={styles.locale} type="button" aria-label="Выбрать язык">
         RU
       </button>
       <ul className={styles.loginList}>

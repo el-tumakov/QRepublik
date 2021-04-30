@@ -1,0 +1,14 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
+.slide {
+  @include slide;
+
+  background-image: url("../../../../public/images/slide-sport@1x.jpg");
+  background-position: right 43px top 109px;
+  background-size: 615px 568px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../../../public/images/slide-sport@2x.jpg");
+  }
+}

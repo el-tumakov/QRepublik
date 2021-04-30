@@ -3,11 +3,19 @@ $darkcyan: #139988;
 $mintcream: #f9fffe;
 $darkslategrey: #2d4b48;
 $lightslategrey: #7c8d8b;
+$slategrey: #6a7d7b;
 $whitesmoke: #e7f2f1;
+$mediumblue: #123bbd;
 
 //color-types
 $main-accent: $darkcyan;
+$second-accent: $mediumblue;
+$font-main: $slategrey;
 $font-light: $mintcream;
 $font-semidark: $darkslategrey;
 $font-semilight: $lightslategrey;
 $border-section: $whitesmoke;
+
+//resolution
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

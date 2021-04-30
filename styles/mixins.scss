@@ -35,3 +35,15 @@
     opacity: 0.5;
   }
 }
+
+@mixin slide {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  min-height: 757px;
+  margin: 0 auto;
+  padding: 0 80px;
+  padding-top: 131px;
+
+  background-repeat: no-repeat;
+}

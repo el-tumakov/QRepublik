@@ -131,16 +131,24 @@ const Footer = () => (
         </ul>
         <ul className={styles.social}>
           <li>
-            <a className={styles.instagram} href="#"></a>
+            <a
+              className={styles.instagram}
+              href="#"
+              aria-label="Наш инстаграм"
+            ></a>
           </li>
           <li>
-            <a className={styles.vk} href="#"></a>
+            <a className={styles.vk} href="#" aria-label="Наш вконтакте"></a>
           </li>
           <li>
-            <a className={styles.facebook} href="#"></a>
+            <a
+              className={styles.facebook}
+              href="#"
+              aria-label="Наш фейсбук"
+            ></a>
           </li>
           <li>
-            <a className={styles.twitter} href="#"></a>
+            <a className={styles.twitter} href="#" aria-label="Наш твиттер"></a>
           </li>
         </ul>
       </section>

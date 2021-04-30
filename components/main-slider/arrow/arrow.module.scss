@@ -1,0 +1,41 @@
+@import "../../../styles/mixins.scss";
+
+@mixin arrow {
+  @include interactive;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+}
+
+.next {
+  @include arrow;
+
+  right: calc(50% - 642px);
+  bottom: -4px;
+
+  width: 67px;
+  height: 43px;
+
+  background-image: url("../../../public/images/arrow-right.svg"),
+  url("../../../public/images/arrow-background.svg");
+  background-position: 8px 3px, 26px 0;
+}
+
+.prev {
+  @include arrow;
+
+  right: calc(50% - 552px);
+  bottom: 3px;
+
+  width: 41px;
+  height: 33px;
+
+  background-image: url("../../../public/images/arrow-left.svg");
+}
