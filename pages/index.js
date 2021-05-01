@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Features from "../components/features/features";
 import Layout from "../components/layout/layout";
 import MainSlider from "../components/main-slider/main-slider";
 
@@ -13,6 +14,7 @@ export default function Home() {
         QRepublik - технологии идентификации человека
       </h1>
       <MainSlider />
+      <Features />
     </Layout>
   );
 }

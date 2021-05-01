@@ -4,7 +4,6 @@
 .slide {
   @include wrapper;
 
-  display: flex;
   flex-direction: column;
   height: 757px;
 }
