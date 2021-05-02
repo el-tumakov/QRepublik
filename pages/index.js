@@ -1,8 +1,9 @@
 import Head from "next/head";
+import MainSlider from "../components/main-slider/main-slider";
 import Features from "../components/features/features";
 import Advantages from "../components/advantages/advantages";
+import ChoiceId from "../components/choice-id/choide-id";
 import Layout from "../components/layout/layout";
-import MainSlider from "../components/main-slider/main-slider";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <MainSlider />
       <Features />
       <Advantages />
+      <ChoiceId />
     </Layout>
   );
 }
