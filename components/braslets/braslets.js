@@ -5,7 +5,7 @@ import styles from "./braslets.module.scss";
 const Braslets = () => (
   <section className={styles.braslets}>
     <div className={styles.wrap}>
-      <h2 className={styles.title}>
+      <h2 className={styles.title} id="braslets">
         Купить свой <span className={styles.accent}>ID</span>
       </h2>
       <ul className={styles.list}>

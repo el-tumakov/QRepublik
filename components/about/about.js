@@ -5,7 +5,7 @@ const About = () => (
   <section className={styles.about}>
     <div className={styles.wrap}>
       <div className={styles.descriptionWrap}>
-        <h2 className={styles.title}>
+        <h2 className={styles.title} id="about">
           О <span className={styles.accent}>нас</span>
         </h2>
         <p>

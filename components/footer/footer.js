@@ -81,16 +81,16 @@ const Footer = () => (
           </li>
         </ul>
       </section>
-      <section className={styles.section && styles.contacts}>
+      <section className={styles.contacts}>
         <h3 className={styles.title}>Контакты</h3>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <a className={styles.link} href="tel:+79254648797">
+            <a className={styles.tel} href="tel:+79254648797">
               +7 925 464 8797
             </a>
           </li>
           <li className={styles.item}>
-            <a className={styles.link} href="mailto:info@qrepublik.com">
+            <a className={styles.email} href="mailto:info@qrepublik.com">
               info@qrepublik.com
             </a>
           </li>

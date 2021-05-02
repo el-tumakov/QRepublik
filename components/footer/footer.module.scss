@@ -2,13 +2,16 @@
 @import "../../styles/mixins.scss";
 
 .footer {
+  margin-top: 100px;
+  padding-bottom: 46px;
+
   font-size: 16px;
   line-height: 24px;
   color: $font-semilight;
 
   background-image: url("../../public/images/footer-background.svg");
   background-repeat: no-repeat;
-  background-position: calc(50% - 930px) 10px;
+  background-position: 0 18px;
 }
 
 .wrapper {
@@ -18,7 +21,7 @@
   width: 1280px;
   margin: 0 auto;
   padding-top: 91px;
-  padding-bottom: 60px;
+  padding-bottom: 14px;
 
   border-top: 1px solid $border-section;
 }
@@ -73,9 +76,30 @@
   @include interactive;
 }
 
+.tel,
+.email {
+  @include interactive;
+
+  display: block;
+  margin-bottom: 21px;
+  padding-left: 32px;
+
+  background-image: url("../../public/images/phone.svg");
+  background-repeat: no-repeat;
+}
+
+.tel {
+  background-image: url("../../public/images/phone.svg");
+}
+
+.email {
+  background-image: url("../../public/images/email.svg");
+}
+
 .companies {
   display: flex;
   margin: 0;
+  margin-top: -7px;
   padding: 0;
 
   list-style: none;
@@ -95,7 +119,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-top: 75px;
+  margin-top: 63px;
   padding: 0;
 
   list-style: none;

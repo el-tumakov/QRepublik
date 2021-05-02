@@ -30,7 +30,7 @@
 
 html,
 body {
-  min-width: 1440px;
+  min-width: 1420px;
   margin: 0;
   padding: 0;
 
@@ -59,4 +59,12 @@ a {
   border: 0;
 
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+.slick-slide a {
+  display: none;
+}
+
+.slick-active a {
+  display: flex;
 }

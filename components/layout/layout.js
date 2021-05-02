@@ -32,7 +32,7 @@ const Layout = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
     </>
   );

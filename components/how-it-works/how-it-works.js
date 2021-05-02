@@ -3,7 +3,7 @@ import styles from "./how-it-works.module.scss";
 const HowItWorks = () => (
   <section className={styles.howItWorks}>
     <div className={styles.wrap}>
-      <h2 className={styles.title}>
+      <h2 className={styles.title} id="how-it-works">
         Как это <span className={styles.accent}>работает?</span>
       </h2>
       <ul className={styles.list}>

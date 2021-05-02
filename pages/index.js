@@ -8,23 +8,23 @@ import Braslets from "../components/braslets/braslets";
 import About from "../components/about/about";
 import Layout from "../components/layout/layout";
 
-export default function Home() {
-  return (
-    <Layout>
-      <Head>
-        <title>QRepublik</title>
-        <meta name="description" content="Браслеты QRepublic" />
-      </Head>
-      <h1 className="visually-hidden">
-        QRepublik - технологии идентификации человека
-      </h1>
-      <MainSlider />
-      <Features />
-      <Advantages />
-      <ChoiceId />
-      <HowItWorks />
-      <Braslets />
-      <About />
-    </Layout>
-  );
-}
+const Home = () => (
+  <Layout>
+    <Head>
+      <title>QRepublik</title>
+      <meta name="description" content="Браслеты QRepublic" />
+    </Head>
+    <h1 className="visually-hidden">
+      QRepublik - технологии идентификации человека
+    </h1>
+    <MainSlider />
+    <Features />
+    <Advantages />
+    <ChoiceId />
+    <HowItWorks />
+    <Braslets />
+    <About />
+  </Layout>
+);
+
+export default Home;

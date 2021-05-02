@@ -8,18 +8,16 @@ import styles from "./main-slider.module.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const MainSlider = () => {
-  return (
-    <section className={styles.mainSlider}>
-      <h2 className="visually-hidden">Типы QRepublik ID</h2>
-      <Slider prevArrow={<Arrow />} nextArrow={<Arrow next />}>
-        <SlideMedical />
-        <SlideSport />
-        <SlideChildren />
-        <SlideSos />
-      </Slider>
-    </section>
-  );
-};
+const MainSlider = () => (
+  <section className={styles.mainSlider}>
+    <h2 className="visually-hidden">Типы QRepublik ID</h2>
+    <Slider prevArrow={<Arrow />} nextArrow={<Arrow next />} accessibility>
+      <SlideMedical />
+      <SlideSport />
+      <SlideChildren />
+      <SlideSos />
+    </Slider>
+  </section>
+);
 
 export default MainSlider;

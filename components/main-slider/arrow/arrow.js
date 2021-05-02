@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import styles from "./arrow.module.scss";
 
 const Arrow = (props) => {
@@ -11,6 +12,11 @@ const Arrow = (props) => {
       onClick={onClick}
     ></button>
   );
+};
+
+Arrow.propTypes = {
+  next: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 export default Arrow;
