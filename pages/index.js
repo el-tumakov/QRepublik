@@ -4,6 +4,7 @@ import Features from "../components/features/features";
 import Advantages from "../components/advantages/advantages";
 import ChoiceId from "../components/choice-id/choide-id";
 import HowItWorks from "../components/how-it-works/how-it-works";
+import Braslets from "../components/braslets/braslets";
 import Layout from "../components/layout/layout";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
       <Advantages />
       <ChoiceId />
       <HowItWorks />
+      <Braslets />
     </Layout>
   );
 }
