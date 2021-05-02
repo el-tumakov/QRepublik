@@ -1,0 +1,137 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.advantages {
+  @include wrapper;
+
+  margin-top: 119px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 88px;
+  text-align: center;
+  color: $font-dark;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 77px;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin item {
+  position: relative;
+
+  width: 354px;
+  height: 350px;
+  padding-top: 190px;
+
+  text-align: center;
+
+  box-shadow: 0 0 15px -2px rgba(#000000, 0.07);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 50%;
+
+    width: 123px;
+    height: 123px;
+    margin-left: -61.5px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 67px 67px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px -2px rgba(#000000, 0.07);
+  }
+
+  &::after {
+    position: absolute;
+    top: 117px;
+    left: 199px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #ffffff;
+
+    background-color: $main-accent;
+    border-radius: 50%;
+  }
+}
+
+.itemTitle {
+  width: 252px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: $font-dark;
+}
+
+.description {
+  width: 305px;
+  margin: 0 auto;
+
+  font-size: 15px;
+  line-height: 20px;
+  color: $font-main;
+}
+
+.data {
+  @include item;
+
+  &::before {
+    background-image: url("../../public/images/advantages-data.svg");
+  }
+
+  &::after {
+    content: "1";
+  }
+}
+
+.technology {
+  @include item;
+
+  &::before {
+    background-image: url("../../public/images/advantages-technology.svg");
+  }
+
+  &::after {
+    content: "2";
+  }
+}
+
+.users {
+  @include item;
+
+  &::before {
+    background-image: url("../../public/images/advantages-users.svg");
+  }
+
+  &::after {
+    content: "3";
+  }
+}

@@ -8,7 +8,7 @@ const Features = () => (
         Медицинский идентификатор создан, чтобы говорить за вас,{" "}
         <span className={styles.accent}>когда вы не можете</span>
       </p>
-      <ul>
+      <ul className={styles.list}>
         <li className={styles.time}>
           Доступ к профилю за пару секунд, сообщите, кто вы, с кем связаться и
           как спасти вашу жизнь

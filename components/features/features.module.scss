@@ -22,56 +22,6 @@
     background-image: url("../../public/images/features-background-right.svg");
     background-repeat: no-repeat;
   }
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    margin-top: 87px;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  li {
-    position: relative;
-
-    width: 197px;
-    padding-top: 118px;
-
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    color: $font-main;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-
-      width: 90px;
-      height: 90px;
-      margin-left: -45px;
-
-      background-repeat: no-repeat;
-      background-position: center center;
-      border-radius: 50%;
-      box-shadow: 0 0 15px -2px rgba(#000000, 0.07);
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -2px;
-      right: -60px;
-
-      width: 1px;
-      height: 201px;
-
-      background-color: $border-section;
-    }
-  }
 }
 
 .wrap {
@@ -91,39 +41,90 @@
   color: $second-accent;
 }
 
-.time {
-  &::before {
-    width: 69px;
-    height: 69px;
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  margin-top: 87px;
+  padding: 0;
 
+  list-style: none;
+}
+
+@mixin item {
+  position: relative;
+
+  width: 197px;
+  padding-top: 118px;
+
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: $font-main;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 90px;
+    height: 90px;
+    margin-left: -45px;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    box-shadow: 0 0 15px -2px rgba(#000000, 0.07);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -60px;
+
+    width: 1px;
+    height: 201px;
+
+    background-color: $border-section;
+  }
+}
+
+.time {
+  @include item;
+
+  &::before {
     background-image: url("../../public/images/feature-time.svg");
+    background-size: 69px 69px;
   }
 }
 
 .health {
-  &::before {
-    width: 62px;
-    height: 63px;
+  @include item;
 
+  &::before {
     background-image: url("../../public/images/feature-health.svg");
+    background-size: 62px 63px;
   }
 }
 
 .accessibility {
-  &::before {
-    width: 63px;
-    height: 63px;
+  @include item;
 
+  &::before {
     background-image: url("../../public/images/feature-accessibility.svg");
+    background-size: 63px 63px;
   }
 }
 
 .information {
-  &::before {
-    width: 62px;
-    height: 63px;
+  @include item;
 
+  &::before {
     background-image: url("../../public/images/feature-information.svg");
+    background-size: 62px 63px;
   }
 
   &::after {

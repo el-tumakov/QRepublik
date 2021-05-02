@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Features from "../components/features/features";
+import Advantages from "../components/advantages/advantages";
 import Layout from "../components/layout/layout";
 import MainSlider from "../components/main-slider/main-slider";
 
@@ -15,6 +16,7 @@ export default function Home() {
       </h1>
       <MainSlider />
       <Features />
+      <Advantages />
     </Layout>
   );
 }
