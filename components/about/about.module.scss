@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.about {
+  margin-top: 105px;
+
+  background-image: url("../../public/images/about-background.jpg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 360px) 85px;
+  background-size: 595px 488px;
+
+  p {
+    margin: 37px 0;
+
+    font-size: 24px;
+    line-height: 34px;
+    color: $font-main;
+  }
+}
+
+.wrap {
+  @include wrapper;
+}
+
+.descriptionWrap {
+  width: 615px;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 88px;
+  color: $font-dark;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.link {
+  @include button;
+
+  width: 245px;
+  margin-top: 40px;
+}
