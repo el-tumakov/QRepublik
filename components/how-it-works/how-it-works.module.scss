@@ -1,0 +1,110 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.howItWorks {
+  margin-top: 133px;
+
+  background-image: url("../../public/images/works-background-left.svg"),
+  url("../../public/images/works-background-right.svg");
+  background-repeat: no-repeat;
+  background-position: 0 817px, 100% 169px;
+}
+
+.wrap {
+  @include wrapper;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 88px;
+  color: $font-dark;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.list {
+  margin: 0;
+  margin-top: 98px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.itemTitle {
+  margin: 35px 0;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 55px;
+  color: $font-dark;
+}
+
+.description {
+  font-size: 24px;
+  line-height: 34px;
+  color: $font-main;
+}
+
+.signUp {
+  padding-left: 240px;
+
+  background-image: url("../../public/images/works-1.svg");
+  background-repeat: no-repeat;
+  background-position: 2px 10px;
+
+  .description {
+    width: 496px;
+  }
+}
+
+.addInfo {
+  width: 741px;
+  margin-top: 87px;
+  margin-left: auto;
+  padding-left: 256px;
+
+  background-image: url("../../public/images/works-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 9px;
+
+  .description {
+    width: 422px;
+  }
+}
+
+.addProducts {
+  margin-top: 79px;
+  padding-left: 258px;
+
+  background-image: url("../../public/images/works-3.svg");
+  background-repeat: no-repeat;
+  background-position: 2px 10px;
+
+  .description {
+    width: 460px;
+  }
+}
+
+.familyProfile {
+  width: 651px;
+  margin-top: 80px;
+  margin-left: auto;
+  padding-left: 224px;
+
+  background-image: url("../../public/images/works-4.svg");
+  background-repeat: no-repeat;
+  background-position: 1px 10px;
+}
+
+.data {
+  width: 784px;
+  margin-top: 98px;
+  padding-left: 235px;
+
+  background-image: url("../../public/images/works-5.svg");
+  background-repeat: no-repeat;
+  background-position: -14px -4px;
+}
