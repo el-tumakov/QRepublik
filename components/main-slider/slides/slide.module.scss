@@ -1,13 +1,6 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/mixins.scss";
 
-.slide {
-  @include wrapper;
-
-  flex-direction: column;
-  height: 757px;
-}
-
 .title {
   margin: 0;
 
@@ -45,17 +38,37 @@
 
 .tableBody {
   display: flex;
-  flex-direction: column;
 }
 
 @mixin tableRow {
   display: flex;
-  margin-bottom: 6px;
+  flex-direction: column;
 }
 
-.titlesRow {
+.rowOne {
   @include tableRow;
 
+  width: 250px;
+  margin-right: 44px;
+}
+
+.rowTwo {
+  @include tableRow;
+
+  width: 279px;
+  margin-right: 28px;
+}
+
+.rowThree {
+  @include tableRow;
+
+  width: 319px;
+}
+
+.tableTitle {
+  padding: 0;
+
+  font-weight: 400;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
@@ -63,11 +76,11 @@
   color: $font-main;
 }
 
-.valuesRow {
-  @include tableRow;
-
+.tableValue {
   order: -1;
+  margin-bottom: 6px;
   margin-left: 4px;
+  padding: 0;
 
   font-weight: 700;
   font-size: 60px;
@@ -75,41 +88,132 @@
   color: $font-semidark;
 }
 
-@mixin tableCell {
-  padding: 0;
-}
-
-.table th {
-  font-weight: 400;
-}
-
-.titleOne,
-.valueOne {
-  @include tableCell;
-
-  width: 250px;
-  margin-right: 44px;
-}
-
-.titleTwo,
-.valueTwo {
-  @include tableCell;
-
-  width: 279px;
-  margin-right: 28px;
-}
-
-.titleThree,
-.valueThree {
-  @include tableCell;
-
-  width: 319px;
-}
-
-.valueType {
-  font-size: 33px;
-}
-
 .table sup {
   font-size: 33px;
+}
+
+@media (max-width: 1369px) {
+  .title {
+    font-size: 41px;
+    line-height: 59px;
+  }
+
+  .description {
+    width: 392px;
+    margin: 14px 0;
+
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .link {
+    width: 163px;
+    margin-top: 16px;
+  }
+
+  .table {
+    min-height: 104px;
+  }
+
+  .rowOne {
+    width: 167px;
+    margin-right: 29px;
+  }
+
+  .rowTwo {
+    width: 186px;
+    margin-right: 19px;
+  }
+
+  .rowThree {
+    width: 213px;
+  }
+
+  .tableTitle {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .tableValue {
+    margin-bottom: 4px;
+    margin-left: 3px;
+
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .table sup {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 969px) {
+  .title {
+    margin-top: 4px;
+
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .description {
+    width: auto;
+    max-width: 327px;
+    min-height: 156px;
+    margin: 7px auto;
+
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .link {
+    order: 1;
+    width: 191px;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+
+  .table {
+    max-width: 327px;
+    min-height: 104px;
+    margin: 0 auto;
+    margin-top: 1px;
+  }
+
+  .tableBody {
+    flex-direction: column;
+  }
+
+  .rowOne,
+  .rowTwo,
+  .rowThree {
+    width: 100%;
+    min-height: 184px;
+    margin-right: 0;
+  }
+
+  .rowTwo {
+    margin-top: 79px;
+  }
+
+  .rowThree {
+    margin-top: 10px;
+  }
+
+  .tableTitle {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .tableValue {
+    margin-bottom: 4px;
+    margin-left: 0;
+
+    font-size: 60px;
+    line-height: 72px;
+  }
+
+  .table sup {
+    font-size: 33px;
+  }
 }

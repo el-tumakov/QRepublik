@@ -16,27 +16,29 @@ const SlideChildren = () => (
     </Link>
     <table className={stylesSlide.table}>
       <tbody className={stylesSlide.tableBody}>
-        <tr className={stylesSlide.titlesRow}>
-          <th className={stylesSlide.titleOne} scope="col">
+        <tr className={stylesSlide.rowOne}>
+          <th className={stylesSlide.tableTitle} scope="row">
             детей пропадает ежедневно
           </th>
-          <th className={stylesSlide.titleTwo} scope="col">
-            детей помогут постороннему найти котенка
-          </th>
-          <th className={stylesSlide.titleThree} scope="col">
-            называют человека знакомым, если видят его второй раз
-          </th>
-        </tr>
-        <tr className={stylesSlide.valuesRow}>
-          <td className={stylesSlide.valueOne}>
+          <td className={stylesSlide.tableValue}>
             50
             <sup styles={stylesSlide.valueType}></sup>
           </td>
-          <td className={stylesSlide.valueTwo}>
+        </tr>
+        <tr className={stylesSlide.rowTwo}>
+          <th className={stylesSlide.tableTitle} scope="row">
+            детей помогут постороннему найти котенка
+          </th>
+          <td className={stylesSlide.tableValue}>
             90
             <sup styles={stylesSlide.valueType}>%</sup>
           </td>
-          <td className={stylesSlide.valueThree}>
+        </tr>
+        <tr className={stylesSlide.rowThree}>
+          <th className={stylesSlide.tableTitle} scope="row">
+            называют человека знакомым, если видят его второй раз
+          </th>
+          <td className={stylesSlide.tableValue}>
             75
             <sup styles={stylesSlide.valueType}>%</sup>
           </td>

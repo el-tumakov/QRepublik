@@ -18,28 +18,30 @@ const SlideSos = () => (
     </Link>
     <table className={stylesSlide.table}>
       <tbody className={stylesSlide.tableBody}>
-        <tr className={stylesSlide.titlesRow}>
-          <th className={stylesSlide.titleOne} scope="col">
+        <tr className={stylesSlide.rowOne}>
+          <th className={stylesSlide.tableTitle} scope="row">
             человек находится в возрасте старше трудоспособного
           </th>
-          <th className={stylesSlide.titleTwo} scope="col">
-            почти половина травм, полученных в результате падения, приводит к
-            потере качества жизни
-          </th>
-          <th className={stylesSlide.titleThree} scope="col">
-            травм должны быть прооперированы в течении 24-48 часов
-          </th>
-        </tr>
-        <tr className={stylesSlide.valuesRow}>
-          <td className={stylesSlide.valueOne}>
+          <td className={stylesSlide.tableValue}>
             39
             <sup styles={stylesSlide.valueType}>млн</sup>
           </td>
-          <td className={stylesSlide.valueTwo}>
+        </tr>
+        <tr className={stylesSlide.rowTwo}>
+          <th className={stylesSlide.tableTitle} scope="row">
+            почти половина травм, полученных в результате падения, приводит к
+            потере качества жизни
+          </th>
+          <td className={stylesSlide.tableValue}>
             49
             <sup styles={stylesSlide.valueType}>%</sup>
           </td>
-          <td className={stylesSlide.valueThree}>
+        </tr>
+        <tr className={stylesSlide.rowThree}>
+          <th className={stylesSlide.tableTitle} scope="row">
+            травм должны быть прооперированы в течении 24-48 часов
+          </th>
+          <td className={stylesSlide.tableValue}>
             95
             <sup styles={stylesSlide.valueType}>%</sup>
           </td>

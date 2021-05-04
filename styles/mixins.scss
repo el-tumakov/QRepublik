@@ -24,6 +24,26 @@
   border: none;
   border-radius: 12px;
   cursor: pointer;
+
+  @media (max-width: 1369px) {
+    min-height: 48px;
+    padding: 7px;
+
+    font-size: 14px;
+    line-height: 17px;
+
+    border-radius: 8px;
+  }
+
+  @media (max-width: 969px) {
+    min-height: 72px;
+    padding: 10px;
+
+    font-size: 18px;
+    line-height: 21px;
+
+    border-radius: 12px;
+  }
 }
 
 @mixin interactive {
@@ -39,11 +59,27 @@
 @mixin slide {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  max-width: 1440px;
   min-height: 757px;
   margin: 0 auto;
   padding: 0 80px;
   padding-top: 131px;
 
   background-repeat: no-repeat;
+
+  @media (max-width: 1369px) {
+    min-height: 430px;
+    padding-top: 31px;
+  }
+
+  @media (max-width: 969px) {
+    padding-top: 292px;
+
+    text-align: center;
+  }
+
+  @media (max-width: 599px) {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
 }

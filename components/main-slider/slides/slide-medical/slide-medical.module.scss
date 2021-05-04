@@ -4,11 +4,35 @@
 .slide {
   @include slide;
 
-  background-image: url("../../../../public/images/slide-medical@1x.jpg");
+  background-image: url("../../../../public/images/slide-medical-desktop@1x.jpg");
   background-position: right 44px top 117px;
   background-size: 612px 540px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../../../public/images/slide-medical@2x.jpg");
+    background-image: url("../../../../public/images/slide-medical-desktop@2x.jpg");
+  }
+}
+
+@media (max-width: 1369px) {
+  .slide {
+    background-image: url("../../../../public/images/slide-medical-tablet@1x.jpg");
+    background-position: right 44px top 17px;
+    background-size: 408px 360px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../public/images/slide-medical-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: 969px) {
+  .slide {
+    background-image: url("../../../../public/images/slide-medical-mobile@1x.jpg");
+    background-position: center 0;
+    background-size: 327px 287px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../public/images/slide-medical-mobile@2x.jpg");
+    }
   }
 }

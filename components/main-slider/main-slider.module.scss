@@ -6,3 +6,9 @@
   margin: 0 auto;
   margin-top: 28px;
 }
+
+@media (max-width: 969px) {
+  .mainSlider {
+    margin-top: 5px;
+  }
+}

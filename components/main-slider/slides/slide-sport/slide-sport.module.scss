@@ -4,11 +4,35 @@
 .slide {
   @include slide;
 
-  background-image: url("../../../../public/images/slide-sport@1x.jpg");
+  background-image: url("../../../../public/images/slide-sport-desktop@1x.jpg");
   background-position: right 43px top 109px;
   background-size: 615px 568px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../../../public/images/slide-sport@2x.jpg");
+    background-image: url("../../../../public/images/slide-sport-desktop@2x.jpg");
+  }
+}
+
+@media (max-width: 1369px) {
+  .slide {
+    background-image: url("../../../../public/images/slide-sport-tablet@1x.jpg");
+    background-position: right 43px top 9px;
+    background-size: 410px 379px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../public/images/slide-sport-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: 969px) {
+  .slide {
+    background-image: url("../../../../public/images/slide-sport-mobile@1x.jpg");
+    background-position: center 0;
+    background-size: 327px 287px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../public/images/slide-sport-mobile@2x.jpg");
+    }
   }
 }

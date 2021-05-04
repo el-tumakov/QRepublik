@@ -4,11 +4,35 @@
 .slide {
   @include slide;
 
-  background-image: url("../../../../public/images/slide-sos@1x.jpg");
+  background-image: url("../../../../public/images/slide-sos-desktop@1x.jpg");
   background-position: right 48px top 113px;
   background-size: 609px 569px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../../../public/images/slide-sos@2x.jpg");
+    background-image: url("../../../../public/images/slide-sos-desktop@2x.jpg");
+  }
+}
+
+@media (max-width: 1369px) {
+  .slide {
+    background-image: url("../../../../public/images/slide-sos-tablet@1x.jpg");
+    background-position: right 48px top 13px;
+    background-size: 406px 379px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../public/images/slide-sos-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: 969px) {
+  .slide {
+    background-image: url("../../../../public/images/slide-sos-mobile@1x.jpg");
+    background-position: center 0;
+    background-size: 327px 287px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../../../public/images/slide-sos-mobile@2x.jpg");
+    }
   }
 }

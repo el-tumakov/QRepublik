@@ -17,29 +17,31 @@ const SlideSport = () => (
     </Link>
     <table className={stylesSlide.table}>
       <tbody className={stylesSlide.tableBody}>
-        <tr className={stylesSlide.titlesRow}>
-          <th className={stylesSlide.titleOne} scope="col">
+        <tr className={stylesSlide.rowOne}>
+          <th className={stylesSlide.tableTitle} scope="row">
             специалистов ищут медицинский идентификатор во время чрезвычайных
             ситуаций
           </th>
-          <th className={stylesSlide.titleTwo} scope="col">
-            смотрят на запястье пациента, чтобы найти медицинское удостоверение
-            личности сразу после приезда
-          </th>
-          <th className={stylesSlide.titleThree} scope="col">
-            ищут медицинский идентификатор на шее пациента
-          </th>
-        </tr>
-        <tr className={stylesSlide.valuesRow}>
-          <td className={stylesSlide.valueOne}>
+          <td className={stylesSlide.tableValue}>
             95
             <sup styles={stylesSlide.valueType}>%</sup>
           </td>
-          <td className={stylesSlide.valueTwo}>
+        </tr>
+        <tr className={stylesSlide.rowTwo}>
+          <th className={stylesSlide.tableTitle} scope="row">
+            смотрят на запястье пациента, чтобы найти медицинское удостоверение
+            личности сразу после приезда
+          </th>
+          <td className={stylesSlide.tableValue}>
             75
             <sup styles={stylesSlide.valueType}>%</sup>
           </td>
-          <td className={stylesSlide.valueThree}>
+        </tr>
+        <tr className={stylesSlide.rowThree}>
+          <th className={stylesSlide.tableTitle} scope="row">
+            ищут медицинский идентификатор на шее пациента
+          </th>
+          <td className={stylesSlide.tableValue}>
             68
             <sup styles={stylesSlide.valueType}>%</sup>
           </td>
