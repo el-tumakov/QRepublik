@@ -108,7 +108,14 @@
 
   .link {
     width: 163px;
+    min-height: 48px;
     margin-top: 16px;
+    padding: 7px;
+
+    font-size: 14px;
+    line-height: 17px;
+
+    border-radius: 8px;
   }
 
   .table {
@@ -168,8 +175,15 @@
   .link {
     order: 1;
     width: 191px;
+    min-height: 72px;
     margin: 0 auto;
     margin-top: 24px;
+    padding: 10px;
+
+    font-size: 18px;
+    line-height: 21px;
+
+    border-radius: 12px;
   }
 
   .table {
