@@ -34,7 +34,8 @@
   position: relative;
 
   width: 354px;
-  height: 350px;
+  min-height: 350px;
+  padding: 30px;
   padding-top: 190px;
 
   text-align: center;
@@ -77,6 +78,20 @@
 
     background-color: $main-accent;
     border-radius: 50%;
+  }
+
+  @media (max-width: 1289px) {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 701px) {
+    width: auto;
+    min-height: 321px;
+
+    &::after {
+      left: calc(50% + 22px);
+    }
   }
 }
 
@@ -133,5 +148,45 @@
 
   &::after {
     content: "3";
+  }
+}
+
+@media (max-width: 1289px) {
+  .advantages {
+    margin-top: 60px;
+  }
+
+  .title {
+    font-size: 41px;
+    line-height: 59px;
+  }
+
+  .list {
+    display: block;
+  }
+}
+
+@media (max-width: 659px) {
+  .advantages {
+    margin-top: 106px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .list {
+    margin-top: 61px;
+  }
+
+  .itemTitle {
+    width: auto;
+  }
+
+  .description {
+    width: auto;
   }
 }
