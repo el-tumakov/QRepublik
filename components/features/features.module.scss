@@ -55,13 +55,15 @@
 @mixin item {
   position: relative;
 
-  width: 197px;
+  flex-grow: 1;
   padding-top: 118px;
 
   font-size: 15px;
   line-height: 20px;
   text-align: center;
   color: $font-main;
+
+  border-right: 1px solid $border-section;
 
   &::before {
     content: "";
@@ -79,16 +81,14 @@
     box-shadow: 0 0 15px -2px rgba(#000000, 0.07);
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    right: -60px;
+  @media (max-width: 1099px) {
+    margin-bottom: 50px;
+  }
 
-    width: 1px;
-    height: 201px;
+  @media (max-width: 659px) {
+    margin-bottom: 41px;
 
-    background-color: $border-section;
+    border: none;
   }
 }
 
@@ -122,12 +122,66 @@
 .information {
   @include item;
 
+  border: none;
+
   &::before {
     background-image: url("../../public/images/feature-information.svg");
     background-size: 62px 63px;
   }
+}
 
-  &::after {
-    display: none;
+.description {
+  width: 193px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1099px) {
+  .list {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .health {
+    border: none;
+  }
+
+  .slogan {
+    width: 670px;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 45px;
+    color: $font-dark;
+  }
+}
+
+@media (max-width: 779px) {
+  .slogan {
+    width: 500px;
+  }
+}
+
+@media (max-width: 659px) {
+  .wrap {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .slogan {
+    width: auto;
+
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .list {
+    display: block;
+    margin-top: 61px;
+  }
+
+  .description {
+    width: auto;
   }
 }
