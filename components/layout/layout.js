@@ -15,19 +15,19 @@ const Layout = (props) => {
           rel="preload"
           href="./fonts/roboto-regular.woff2"
           as="font"
-          crossOrigin
+          crossOrigin="true"
         />
         <link
           rel="preload"
           href="./fonts/roboto-medium.woff2"
           as="font"
-          crossOrigin
+          crossOrigin="true"
         />
         <link
           rel="preload"
           href="./fonts/roboto-bold.woff2"
           as="font"
-          crossOrigin
+          crossOrigin="true"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
