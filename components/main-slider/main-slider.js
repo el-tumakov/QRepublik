@@ -11,7 +11,12 @@ import "slick-carousel/slick/slick-theme.css";
 const MainSlider = () => (
   <section className={styles.mainSlider} id="main-slider">
     <h2 className="visually-hidden">Типы QRepublik ID</h2>
-    <Slider prevArrow={<Arrow />} nextArrow={<Arrow next />} accessibility>
+    <Slider
+      className={styles.slider}
+      prevArrow={<Arrow />}
+      nextArrow={<Arrow next />}
+      accessibility
+    >
       <SlideMedical />
       <SlideSport />
       <SlideChildren />

@@ -9,7 +9,13 @@
 
 @media (max-width: 969px) {
   .mainSlider {
+    position: static;
+
     margin-top: 5px;
     padding-bottom: 70px;
+  }
+
+  .slider {
+    position: static !important;
   }
 }
