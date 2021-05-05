@@ -4,10 +4,14 @@
 .about {
   margin-top: 105px;
 
-  background-image: url("../../public/images/about-background.jpg");
+  background-image: url("../../public/images/about-background-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: calc(50% + 360px) 85px;
   background-size: 595px 488px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../public/images/about-background-desktop@2x.jpg");
+  }
 
   p {
     margin: 37px 0;
@@ -44,4 +48,86 @@
 
   width: 245px;
   margin-top: 40px;
+}
+
+@media (max-width: 1289px) {
+  .about {
+    background-image: url("../../public/images/about-background-tablet@1x.jpg");
+    background-position: calc(50% + 300px) 45px;
+    background-size: 447px 336px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../public/images/about-background-tablet@2x.jpg");
+    }
+
+    p {
+      font-size: 21px;
+      line-height: 27px;
+    }
+  }
+
+  .title {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  .descriptionWrap {
+    width: 515px;
+  }
+}
+
+@media (max-width: 1089px) {
+  .about {
+    padding-bottom: 370px;
+
+    text-align: center;
+
+    background-position: bottom 0 center;
+  }
+
+  .descriptionWrap {
+    margin: 0 auto;
+  }
+
+  .link {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    margin-top: 115px;
+    padding-bottom: 280px;
+
+    background-image: url("../../public/images/about-background-mobile@1x.jpg");
+    background-size: 296px 243px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../public/images/about-background-mobile@2x.jpg");
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 23px;
+
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+
+  .wrap {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .title {
+    margin-bottom: 10px;
+
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .descriptionWrap {
+    width: auto;
+  }
 }
