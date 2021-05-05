@@ -3,7 +3,9 @@
 
 .footer {
   margin-top: 100px;
+  padding-right: 80px;
   padding-bottom: 46px;
+  padding-left: 80px;
 
   font-size: 16px;
   line-height: 24px;
@@ -18,7 +20,7 @@
   position: relative;
 
   display: flex;
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding-top: 91px;
   padding-bottom: 14px;
@@ -160,4 +162,90 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+@media (max-width: 1289px) {
+  .footer {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  .wrapper {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .support,
+  .researches,
+  .about,
+  .contacts {
+    margin: 0;
+  }
+
+  .researches {
+    justify-self: end;
+  }
+
+  .contacts {
+    width: 254px;
+
+    justify-self: end;
+  }
+
+  .social {
+    width: 175px;
+  }
+}
+
+@media (max-width: 829px) {
+  .footer {
+    margin-top: 69px;
+    padding-bottom: 25px;
+
+    line-height: 22px;
+  }
+
+  .wrapper {
+    display: block;
+    padding-top: 73px;
+  }
+
+  .support,
+  .researches,
+  .about,
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 65px;
+
+    text-align: center;
+  }
+
+  .companies {
+    justify-content: center;
+  }
+
+  .social {
+    margin: 0 auto;
+    margin-top: 37px;
+  }
+
+  .tel {
+    align-self: start;
+    margin-left: 11px;
+    padding-left: 25px;
+  }
+
+  .copyright {
+    position: static;
+
+    margin-top: -13px;
+
+    text-align: center;
+  }
 }
