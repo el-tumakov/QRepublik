@@ -126,6 +126,15 @@
 @media (max-width: 767px) {
   .braslets {
     margin-top: 108px;
+
+    background-image: url("../../public/images/braslets-background-left-mobile.svg"),
+    url("../../public/images/braslets-background-right-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: 0 295px, 100% 1206px;
+
+    &::before {
+      display: none;
+    }
   }
 
   .wrap {

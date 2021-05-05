@@ -184,6 +184,15 @@
 }
 
 @media (max-width: 659px) {
+  .howItWorks {
+    margin-top: 0;
+    padding-top: 100px;
+
+    background-image: url("../../public/images/works-background-left-mobile.svg"),
+    url("../../public/images/works-background-right-mobile.svg");
+    background-position: 0 24px, 100% 1395px;
+  }
+
   .wrap {
     padding-right: 24px;
     padding-left: 24px;

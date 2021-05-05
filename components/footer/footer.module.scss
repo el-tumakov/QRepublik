@@ -204,6 +204,10 @@
     padding-bottom: 25px;
 
     line-height: 22px;
+
+    background-image: url("../../public/images/footer-background-left-mobile.svg"),
+    url("../../public/images/footer-background-right-mobile.svg");
+    background-position: 0 4px, right 0 bottom 7px;
   }
 
   .wrapper {
