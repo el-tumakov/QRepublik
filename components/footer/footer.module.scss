@@ -131,8 +131,13 @@
   @include interactive;
 
   display: block;
-  width: 29px;
-  height: 29px;
+  width: 28px;
+  height: 28px;
+
+  background-color: $main-accent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 8px;
 }
 
 .instagram {
