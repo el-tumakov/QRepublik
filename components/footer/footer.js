@@ -95,7 +95,7 @@ const Footer = () => (
             </a>
           </li>
           <li className={styles.item}>
-            <Link href="#">
+            <Link href="/cooperation">
               <a className={styles.link}>Сотрудничество</a>
             </Link>
           </li>

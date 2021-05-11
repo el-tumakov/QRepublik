@@ -29,17 +29,17 @@ const Header = () => {
           }
         >
           <li className={styles.navItem}>
-            <Link href="#how-it-works">
+            <Link href="/#how-it-works">
               <a className={styles.link}>Как это работает</a>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="#braslets">
+            <Link href="/#braslets">
               <a className={styles.link}>Купить свой ID</a>
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="#about">
+            <Link href="/#about">
               <a className={styles.link}>О нас</a>
             </Link>
           </li>

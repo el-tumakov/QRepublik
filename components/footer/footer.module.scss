@@ -2,10 +2,10 @@
 @import "../../styles/mixins.scss";
 
 .footer {
+  @include wrapper;
+
   margin-top: 100px;
-  padding-right: 80px;
   padding-bottom: 46px;
-  padding-left: 80px;
 
   font-size: 16px;
   line-height: 24px;
@@ -170,11 +170,6 @@
 }
 
 @media (max-width: 1289px) {
-  .footer {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-
   .wrapper {
     display: grid;
 
@@ -203,7 +198,7 @@
   }
 }
 
-@media (max-width: 829px) {
+@media (max-width: 915px) {
   .footer {
     margin-top: 69px;
     padding-bottom: 25px;

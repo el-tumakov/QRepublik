@@ -1,0 +1,37 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.breadcrumbs {
+  @include wrapper;
+
+  font-size: 13px;
+  line-height: 15px;
+
+  p {
+    margin: 0;
+    margin-left: 13px;
+    padding-left: 25px;
+
+    background-image: url("../../public/images/breadcrumbs-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 center;
+  }
+}
+
+.wrap {
+  display: flex;
+  width: 100%;
+  padding-top: 43px;
+
+  border-top: 1px solid $border-section;
+}
+
+.mainLink {
+  @include interactive;
+}
+
+@media (max-width: $tablet-width) {
+  .breadcrumbs {
+    margin-bottom: 32px;
+  }
+}

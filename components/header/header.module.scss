@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 34px;
-  padding-bottom: 34px;
+  padding-bottom: 21px;
 
   font-size: 16px;
   line-height: 19px;
@@ -181,12 +181,7 @@
   }
 }
 
-@media (max-width: 599px) {
-  .header {
-    padding-right: 24px;
-    padding-left: 24px;
-  }
-
+@media (max-width: $tablet-width) {
   .locale {
     margin-right: 28px;
   }
