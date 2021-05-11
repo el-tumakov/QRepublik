@@ -8,9 +8,9 @@ const SlideMedical = () => (
       Медицинский <span className={stylesSlide.accent}>ID</span>
     </h2>
     <p className={stylesSlide.description}>
-      Медицинский ID — неэлектронные браслеты для экстренных ситуаций, легко
-      обновляются, экономичны и привлекательны, предоставят дополнительную
-      информацию о вашем здоровье
+      Медицинский ID — неэлектронные браслеты для экстренных ситуаций: легко
+      обновляются, экономичны и привлекательны, предоставляют информацию о вашем
+      здоровье
     </p>
     <Link href="#">
       <a className={stylesSlide.link}>Подробнее</a>
@@ -19,7 +19,7 @@ const SlideMedical = () => (
       <tbody className={stylesSlide.tableBody}>
         <tr className={stylesSlide.rowOne}>
           <th className={stylesSlide.tableTitle} scope="row">
-            пожилым требуется помощь при ходьбе, и лишь 8% остаются в пределах
+            пожилых требуется помощь при ходьбе и лишь 8% остаются в пределах
             дома
           </th>
           <td className={stylesSlide.tableValue}>
@@ -29,11 +29,11 @@ const SlideMedical = () => (
         </tr>
         <tr className={stylesSlide.rowTwo}>
           <th className={stylesSlide.tableTitle} scope="row">
-            людей старше 60 лет падают минимум раз в год, и около 54% получают
+            людей старше 60 лет падают минимум раз в год и около 54% получают
             серьезные травмы
           </th>
           <td className={stylesSlide.tableValue}>
-            33
+            30
             <sup styles={stylesSlide.valueType}>%</sup>
           </td>
         </tr>

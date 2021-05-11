@@ -11,19 +11,19 @@ const Features = () => (
       <ul className={styles.list}>
         <li className={styles.time}>
           <p className={styles.description}>
-            Доступ к профилю за пару секунд, сообщите, кто вы, с кем связаться и
+            Доступ к профилю за пару секунд: сообщите кто вы, с кем связаться и
             как спасти вашу жизнь
           </p>
         </li>
         <li className={styles.health}>
           <p className={styles.description}>
             Может передавать медицинскому персоналу информацию о состоянии
-            здоровья или аллергии
+            здоровья
           </p>
         </li>
         <li className={styles.accessibility}>
           <p className={styles.description}>
-            Ваш медицинский профиль, доступен в любое время и в любом месте
+            Ваш медицинский профиль доступен в любое время и в любом месте
           </p>
         </li>
         <li className={styles.information}>

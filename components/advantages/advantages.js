@@ -10,8 +10,8 @@ const Advantages = () => (
       <li className={styles.data}>
         <h3 className={styles.itemTitle}>Управляйте данными</h3>
         <p className={styles.description}>
-          Данные, отображаемые в случае сканирования ID, осуществляется через
-          личный кабинет на сайте QRepublik.
+          Данные, отображаемые в случае сканирования ID, вносятся через личный
+          кабинет на сайте QRepublik.
         </p>
       </li>
       <li className={styles.technology}>
