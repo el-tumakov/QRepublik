@@ -21,6 +21,7 @@
   min-height: 72px;
   padding: 10px;
 
+  font-weight: 700;
   font-size: 21px;
   line-height: 25px;
   color: $font-light;
@@ -67,5 +68,18 @@
   @media (max-width: 599px) {
     padding-right: 24px;
     padding-left: 24px;
+  }
+}
+
+@mixin section-title {
+  margin: 10px 0;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 88px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 36px;
   }
 }
