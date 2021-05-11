@@ -3,11 +3,11 @@ import Breadcrumbs from "../components/breadcrumbs/breadcrumbs";
 import Cooperation from "../components/cooperation/cooperation";
 import Layout from "../components/layout/layout";
 
-const Home = () => (
+const CooperationPage = () => (
   <Layout>
     <Head>
-      <title>Сотрудничество с Qrepublic</title>
-      <meta name="description" content="Сотрудничество с QRepublic" />
+      <title>Сотрудничество с QRepublik</title>
+      <meta name="description" content="Сотрудничество с QRepublik" />
     </Head>
     <Breadcrumbs>
       <p>Сотрудничество</p>
@@ -16,4 +16,4 @@ const Home = () => (
   </Layout>
 );
 
-export default Home;
+export default CooperationPage;

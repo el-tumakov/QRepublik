@@ -75,7 +75,7 @@ const Footer = () => (
             </Link>
           </li>
           <li className={styles.item}>
-            <Link href="#">
+            <Link href="/press">
               <a className={styles.link}>О нас пишут</a>
             </Link>
           </li>

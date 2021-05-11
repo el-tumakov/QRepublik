@@ -1,0 +1,80 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.press {
+  @include wrapper;
+
+  ol {
+    padding: 0;
+
+    color: $font-main;
+  }
+
+  li {
+    max-width: 500px;
+
+    list-style-position: inside;
+  }
+
+  a {
+    @include interactive;
+
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: underline;
+  }
+}
+
+.wrap {
+  background-image: url("../../public/images/hands-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
+  background-size: 580px 407px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../public/images/hands-desktop@2x.jpg");
+  }
+}
+
+.title {
+  @include section-title;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+@media (max-width: 1289px) {
+  .wrap {
+    padding-bottom: 440px;
+
+    background-position: center bottom 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .press {
+    text-align: center;
+
+    li {
+      max-width: auto;
+      margin: 0 auto;
+    }
+
+    a {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+
+  .wrap {
+    padding-bottom: 270px;
+
+    background-image: url("../../public/images/hands-mobile@1x.jpg");
+    background-size: 291px 204px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../public/images/hands-mobile@2x.jpg");
+    }
+  }
+}
