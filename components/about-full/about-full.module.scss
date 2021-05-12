@@ -1,0 +1,154 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.about {
+  @include wrapper;
+}
+
+.wrap {
+  padding-bottom: 160px;
+
+  background-image: url("../../public/images/about-background-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
+  background-size: 595px 488px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../public/images/about-background-desktop@2x.jpg");
+  }
+}
+
+.title {
+  @include section-title;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.textWrap {
+  display: flex;
+
+  font-size: 24px;
+  line-height: 34px;
+  color: $font-main;
+}
+
+.leftSide {
+  width: 615px;
+  margin-right: 102px;
+}
+
+.rightSide {
+  flex-shrink: 0;
+  width: 595px;
+}
+
+.quoteWrap {
+  width: 567px;
+  margin: 0;
+}
+
+.letterTitle {
+  font-weight: 500;
+  font-size: 32px;
+  color: $font-dark;
+}
+
+.quote {
+  margin: 0;
+
+  font-style: italic;
+  font-size: 18px;
+  line-height: 32px;
+  color: $font-main;
+}
+
+.author {
+  width: 211px;
+  margin-top: 13px;
+
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.authorPost {
+  display: block;
+  margin-top: 6px;
+}
+
+@media (max-width: 1349px) {
+  .title {
+    text-align: center;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0;
+
+    background-position: center bottom 350px;
+  }
+
+  .textWrap {
+    display: block;
+
+    text-align: center;
+  }
+
+  .leftSide,
+  .rightSide {
+    margin: 0 auto;
+  }
+
+  .quoteWrap {
+    margin: 0 auto;
+    margin-top: 500px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .wrap {
+    background-image: url("../../public/images/about-background-mobile@1x.jpg");
+    background-position: center bottom 310px;
+    background-size: 296px 243px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../public/images/about-background-mobile@2x.jpg");
+    }
+  }
+
+  .textWrap {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .quoteWrap {
+    margin-top: 260px;
+  }
+
+  .letterTitle {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .quote {
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .author {
+    margin: 0 auto;
+    margin-top: 13px;
+
+    text-align: center;
+  }
+
+  .authorPost {
+    display: block;
+    margin-top: 6px;
+  }
+}

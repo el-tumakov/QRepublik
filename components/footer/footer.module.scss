@@ -2,8 +2,6 @@
 @import "../../styles/mixins.scss";
 
 .footer {
-  @include wrapper;
-
   margin-top: 100px;
   padding-bottom: 46px;
 
@@ -17,6 +15,10 @@
 }
 
 .wrapper {
+  @include wrapper;
+}
+
+.footerWrap {
   position: relative;
 
   display: flex;
@@ -170,7 +172,7 @@
 }
 
 @media (max-width: 1289px) {
-  .wrapper {
+  .footerWrap {
     display: grid;
 
     grid-template-columns: 1fr 1fr;
@@ -210,7 +212,7 @@
     background-position: 0 4px, right 0 bottom 7px;
   }
 
-  .wrapper {
+  .footerWrap {
     display: block;
     padding-top: 73px;
   }
