@@ -13,7 +13,7 @@ const SlideSos = () => (
       или скорая помощь. Мы отправим члена семьи или службу экстренной помощи в
       зависимости от каждой конкретной ситуации
     </p>
-    <Link href="#">
+    <Link href="/detail-sos">
       <a className={stylesSlide.link}>Подробнее</a>
     </Link>
     <table className={stylesSlide.table}>

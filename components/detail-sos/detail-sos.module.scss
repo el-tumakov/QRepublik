@@ -1,0 +1,87 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.wrap {
+  @include wrapper;
+
+  padding-bottom: 160px;
+
+  background-image: url("../../public/images/slide-sos-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 0 right 0;
+  background-size: 609px 569px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../public/images/slide-sos-desktop@2x.jpg");
+  }
+}
+
+.title {
+  @include section-title;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.textWrap {
+  display: flex;
+
+  font-size: 24px;
+  line-height: 34px;
+  color: $font-main;
+}
+
+.leftSide {
+  width: 615px;
+  margin-right: 102px;
+}
+
+.rightSide {
+  flex-shrink: 0;
+  width: 595px;
+}
+
+@media (max-width: 1349px) {
+  .title {
+    text-align: center;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 600px;
+
+    background-position: center bottom 0;
+  }
+
+  .textWrap {
+    display: block;
+
+    text-align: center;
+  }
+
+  .leftSide,
+  .rightSide {
+    width: auto;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .wrap {
+    padding-bottom: 320px;
+
+    background-image: url("../../public/images/slide-sos-mobile@1x.jpg");
+    background-size: 327px 287px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../public/images/slide-sos-mobile@2x.jpg");
+    }
+  }
+
+  .textWrap {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
