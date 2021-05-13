@@ -17,7 +17,7 @@ const Footer = () => (
               </Link>
             </li>
             <li className={styles.item}>
-              <Link href="#">
+              <Link href="/terms-service">
                 <a className={styles.link}>Условия предоставления услуг</a>
               </Link>
             </li>
