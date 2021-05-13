@@ -10,7 +10,7 @@ const Footer = () => (
           <h3 className={styles.title}>Поддержка</h3>
           <ul className={styles.list}>
             <li className={styles.item}>
-              <Link href="#">
+              <Link href="/indications-for-wearing">
                 <a className={styles.link}>
                   Показания для ношения Медицинского удостоверения
                 </a>

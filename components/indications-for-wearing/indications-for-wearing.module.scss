@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.indications {
+  font-size: 18px;
+  line-height: 28px;
+  color: $font-main;
+
+  b {
+    color: $font-dark;
+  }
+}
+
+.wrap {
+  @include wrapper;
+}
+
+.title {
+  @include section-title;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+@media (max-width: $tablet-width) {
+  .indications {
+    text-align: center;
+  }
+}
