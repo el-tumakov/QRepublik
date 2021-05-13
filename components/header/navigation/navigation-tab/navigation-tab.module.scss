@@ -1,0 +1,53 @@
+@import "../../../../styles/variables.scss";
+@import "../../../../styles/mixins.scss";
+
+.item {
+  width: 100%;
+  min-height: 43px;
+  overflow: hidden;
+}
+
+.topWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemTitle {
+  margin: 0;
+
+  text-transform: uppercase;
+}
+
+@mixin navigation-selector {
+  width: 22px;
+  height: 22px;
+  margin-top: -3px;
+  margin-left: 50px;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("../../../../public/images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonOpen {
+  @include navigation-selector;
+}
+
+.buttonClose {
+  @include navigation-selector;
+
+  transform: rotate(45deg);
+}
+
+.content {
+  display: block;
+}
+
+.contentHidden {
+  display: none;
+}

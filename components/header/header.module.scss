@@ -3,7 +3,9 @@
 
 .header {
   @include wrapper;
+}
 
+.wrap {
   position: relative;
 
   display: flex;
@@ -11,17 +13,6 @@
   align-items: center;
   padding-top: 34px;
   padding-bottom: 21px;
-
-  font-size: 16px;
-  line-height: 19px;
-  color: $font-semidark;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  width: 691px;
-  margin-top: 5px;
 }
 
 .logo {
@@ -30,43 +21,14 @@
   flex-shrink: 0;
 }
 
-.navList,
-.navListVisible,
-.loginList,
-.loginListVisible {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
-.navList,
-.navListVisible {
-  flex-wrap: wrap;
-  justify-content: flex-end;
-
-  text-transform: uppercase;
-}
-
-.navItem {
-  margin-bottom: 5px;
-  margin-left: 43px;
-}
-
-.link {
-  @include interactive;
-}
-
 .locale {
   @include interactive;
 
-  margin-right: 40px;
-  margin-left: auto;
+  position: absolute;
+  right: 392px;
+
   padding: 0;
   padding-right: 18px;
-  padding-left: 43px;
 
   font-size: inherit;
   font-family: inherit;
@@ -80,42 +42,31 @@
   cursor: pointer;
 }
 
-.button,
-.buttonSignUp {
-  @include button;
-
-  width: 221px;
-  min-height: 41px;
-
-  font-size: inherit;
-  line-height: inherit;
-  text-transform: none;
-
-  border-radius: 6px;
-}
-
-.buttonSignUp {
-  width: 110px;
-  margin-left: 21px;
-
-  color: $main-accent;
-
-  background-color: transparent;
-  border: 2px solid $main-accent;
-}
-
 .menu {
   display: none;
 }
 
 @media (max-width: 1229px) {
+  .wrap {
+    justify-content: flex-start;
+  }
+
+  .locale {
+    position: static;
+
+    margin-left: auto;
+  }
+
+  .menuOpened,
   .menu {
     @include interactive;
 
     display: block;
     flex-shrink: 0;
+    order: -1;
     width: 30px;
     height: 30px;
+    margin-right: 20px;
     padding: 0;
 
     background-color: transparent;
@@ -126,73 +77,8 @@
     cursor: pointer;
   }
 
-  .navList,
-  .loginList {
-    display: none;
-  }
-
-  .navListVisible {
-    position: absolute;
-    top: 75px;
-    right: 0;
-    z-index: 1;
-
-    flex-direction: column;
-    width: 100%;
-
-    background-color: #ffffff;
-  }
-
-  .navItem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 41px;
-    margin: 0;
-  }
-
-  .loginListVisible {
-    position: absolute;
-    top: 198px;
-    right: 0;
-    z-index: 1;
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-    background-color: #ffffff;
-  }
-
-  .button,
-  .buttonSignUp {
-    width: auto;
-
-    color: inherit;
-    text-transform: uppercase;
-
-    background-color: transparent;
-    border: none;
-    border-radius: none;
-  }
-
-  .buttonSignUp {
-    margin: 0;
-  }
-}
-
-@media (max-width: $tablet-width) {
-  .locale {
-    margin-right: 28px;
-  }
-
-  .menu {
-    margin-right: 5px;
-  }
-}
-
-@media (max-width: 340px) {
-  .locale {
-    margin-right: 10px;
+  .menuOpened {
+    background-image: url("../../public/images/plus.svg");
+    transform: rotate(45deg);
   }
 }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Social from "../social/social";
 import styles from "./footer.module.scss";
 
 const Footer = () => (
@@ -130,32 +131,9 @@ const Footer = () => (
               </a>
             </li>
           </ul>
-          <ul className={styles.social}>
-            <li>
-              <a
-                className={styles.instagram}
-                href="#"
-                aria-label="Наш инстаграм"
-              ></a>
-            </li>
-            <li>
-              <a className={styles.vk} href="#" aria-label="Наш вконтакте"></a>
-            </li>
-            <li>
-              <a
-                className={styles.facebook}
-                href="#"
-                aria-label="Наш фейсбук"
-              ></a>
-            </li>
-            <li>
-              <a
-                className={styles.twitter}
-                href="#"
-                aria-label="Наш твиттер"
-              ></a>
-            </li>
-          </ul>
+          <div className={styles.socialWrap}>
+            <Social />
+          </div>
         </section>
         <p className={styles.copyright}>Авторские права © 2021 Республика</p>
       </div>
