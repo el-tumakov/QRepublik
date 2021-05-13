@@ -1,0 +1,77 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.item {
+  min-height: 111px;
+  padding-top: 37px;
+  padding-bottom: 40px;
+  overflow: hidden;
+
+  border-bottom: 1px solid $border-section;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.topWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.itemTitle {
+  @include subtitle;
+
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+@mixin faqButton {
+  width: 22px;
+  height: 22px;
+  margin-left: 50px;
+
+  background-color: transparent;
+  background-image: url("../../../public/images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonOpen {
+  @include faqButton;
+}
+
+.buttonClose {
+  @include faqButton;
+
+  transform: rotate(45deg);
+}
+
+.content {
+  display: block;
+}
+
+.contentHidden {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .item {
+    min-height: 77px;
+    padding-top: 25px;
+    padding-bottom: 3px;
+  }
+
+  .itemTitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .buttonOpen,
+  .buttonClose {
+    background-size: 15px 15px;
+  }
+}

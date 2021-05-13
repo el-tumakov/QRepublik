@@ -1,0 +1,47 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.faq {
+  font-size: 18px;
+  line-height: 28px;
+  color: $font-main;
+
+  b {
+    color: $font-dark;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  ol {
+    padding: 0;
+
+    list-style-position: inside;
+  }
+}
+
+.wrap {
+  @include wrapper;
+}
+
+.title {
+  @include section-title;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (max-width: $tablet-width) {
+  .faq {
+    line-height: 26px;
+  }
+}
