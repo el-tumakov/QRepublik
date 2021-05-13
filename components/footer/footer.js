@@ -22,7 +22,7 @@ const Footer = () => (
               </Link>
             </li>
             <li className={styles.item}>
-              <Link href="#">
+              <Link href="/cookie-police">
                 <a className={styles.link}>Политика файлов Cookie</a>
               </Link>
             </li>

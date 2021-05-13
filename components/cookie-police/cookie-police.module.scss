@@ -1,0 +1,43 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.cookie {
+  font-size: 18px;
+  line-height: 28px;
+  color: $font-main;
+
+  b {
+    color: $font-dark;
+  }
+}
+
+.wrap {
+  @include wrapper;
+}
+
+.title {
+  @include section-title;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.itemTitle {
+  @include subtitle;
+
+  margin-top: 30px;
+}
+
+@media (max-width: $tablet-width) {
+  .cookie {
+    text-align: center;
+  }
+}
