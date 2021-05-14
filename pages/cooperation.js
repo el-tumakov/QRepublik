@@ -10,7 +10,7 @@ const CooperationPage = () => (
       <meta name="description" content="Сотрудничество с QRepublik" />
     </Head>
     <Breadcrumbs>
-      <p>Сотрудничество</p>
+      <a>Сотрудничество</a>
     </Breadcrumbs>
     <Cooperation />
   </Layout>

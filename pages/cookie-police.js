@@ -10,7 +10,7 @@ const CookiePolicePage = () => (
       <meta name="description" content="Политика файлов Cookie" />
     </Head>
     <Breadcrumbs>
-      <p>Политика файлов Cookie</p>
+      <a>Политика файлов Cookie</a>
     </Breadcrumbs>
     <CookiePolice />
   </Layout>

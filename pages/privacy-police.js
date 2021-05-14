@@ -10,7 +10,7 @@ const PrivacyPolicePage = () => (
       <meta name="description" content="Политика конфеденциальности" />
     </Head>
     <Breadcrumbs>
-      <p>Политика конфеденциальности</p>
+      <a>Политика конфеденциальности</a>
     </Breadcrumbs>
     <PrivacyPolice />
   </Layout>

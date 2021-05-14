@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Breadcrumbs from "../components/breadcrumbs/breadcrumbs";
-import Technology from "../components/technology/technology";
-import Layout from "../components/layout/layout";
+import Breadcrumbs from "../../components/breadcrumbs/breadcrumbs";
+import Technology from "../../components/technology/technology";
+import Layout from "../../components/layout/layout";
 
 const TechnologyPage = () => (
   <Layout>
@@ -10,7 +10,7 @@ const TechnologyPage = () => (
       <meta name="description" content="Технологии QRepublik" />
     </Head>
     <Breadcrumbs>
-      <p>Технологии</p>
+      <a>Технологии</a>
     </Breadcrumbs>
     <Technology />
   </Layout>

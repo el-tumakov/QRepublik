@@ -57,12 +57,28 @@
 }
 
 @mixin item {
+}
+
+.item1 {
+  order: 0;
+  margin-top: 0;
+}
+
+.item2,
+.item3,
+.item4 {
+  order: 2;
+  margin-top: 81px;
+}
+
+.link {
+  @include interactive;
+
   position: relative;
 
-  order: 2;
+  display: block;
   width: 354px;
   min-height: 322px;
-  margin-top: 81px;
   padding-top: 189px;
   padding-right: 20px;
   padding-left: 20px;
@@ -93,39 +109,20 @@
   }
 }
 
-.item1 {
-  @include item;
-
-  order: 0;
-  margin-top: 0;
-
-  &::before {
-    content: "1";
-  }
+.item1 .link::before {
+  content: "1";
 }
 
-.item2 {
-  @include item;
-
-  &::before {
-    content: "2";
-  }
+.item2 .link::before {
+  content: "2";
 }
 
-.item3 {
-  @include item;
-
-  &::before {
-    content: "3";
-  }
+.item3 .link::before {
+  content: "3";
 }
 
-.item4 {
-  @include item;
-
-  &::before {
-    content: "4";
-  }
+.item4 .link::before {
+  content: "4";
 }
 
 .itemTitle {

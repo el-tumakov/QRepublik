@@ -10,7 +10,7 @@ const DetailSosPage = () => (
       <meta name="description" content="Подробнее о кнопке помощи" />
     </Head>
     <Breadcrumbs>
-      <p>Подробнее</p>
+      <a>Подробнее</a>
     </Breadcrumbs>
     <DetailSos />
   </Layout>

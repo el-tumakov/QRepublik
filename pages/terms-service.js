@@ -10,7 +10,7 @@ const TermsServicePage = () => (
       <meta name="description" content="Условия предоставления услуг" />
     </Head>
     <Breadcrumbs>
-      <p>Условия предоставления услуг</p>
+      <a>Условия предоставления услуг</a>
     </Breadcrumbs>
     <TermsService />
   </Layout>

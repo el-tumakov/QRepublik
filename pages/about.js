@@ -10,7 +10,7 @@ const AboutPage = () => (
       <meta name="description" content="Информация о QRepublik" />
     </Head>
     <Breadcrumbs>
-      <p>О нас</p>
+      <a>О нас</a>
     </Breadcrumbs>
     <AboutFull />
   </Layout>

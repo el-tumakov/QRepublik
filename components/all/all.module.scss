@@ -1,0 +1,80 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.wrap {
+  @include wrapper;
+}
+
+.list {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.itemLanguages {
+  min-height: 429px;
+
+  background-image: url("../../public/images/all-laguages.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 590px 429px;
+}
+
+.itemTranslate {
+  min-height: 400px;
+  margin-top: 200px;
+  padding-left: 861px;
+
+  background-image: url("../../public/images/all-translate.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 670px 400px;
+}
+
+.itemValidation {
+  min-height: 445px;
+  margin-top: 200px;
+
+  background-image: url("../../public/images/all-validation.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 600px 445px;
+}
+
+.itemAnalysis {
+  min-height: 450px;
+  margin-top: 200px;
+  padding-left: 892px;
+
+  background-image: url("../../public/images/all-analysis.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 600px 450px;
+}
+
+.itemTitle {
+  max-width: 597px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  padding-top: 60px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 56px;
+  color: $font-dark;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.itemDescription {
+  max-width: 452px;
+  margin: 21px 0;
+
+  font-size: 24px;
+  line-height: 34px;
+  color: $font-main;
+}

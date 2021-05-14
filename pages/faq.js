@@ -10,7 +10,7 @@ const FaqPage = () => (
       <meta name="description" content="Частые вопросы" />
     </Head>
     <Breadcrumbs>
-      <p>Частые вопросы</p>
+      <a>Частые вопросы</a>
     </Breadcrumbs>
     <Faq />
   </Layout>

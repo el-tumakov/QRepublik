@@ -10,7 +10,7 @@ const PressPage = () => (
       <meta name="description" content="Пресса о QRepublik" />
     </Head>
     <Breadcrumbs>
-      <p>О нас пишут</p>
+      <a>О нас пишут</a>
     </Breadcrumbs>
     <Press />
   </Layout>

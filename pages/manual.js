@@ -10,7 +10,7 @@ const ManualPage = () => (
       <meta name="description" content="Инструкция" />
     </Head>
     <Breadcrumbs>
-      <p>Инструкция</p>
+      <a>Инструкция</a>
     </Breadcrumbs>
     <Manual />
   </Layout>

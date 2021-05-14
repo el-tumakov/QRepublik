@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./technology.module.scss";
 
 const Technology = () => (
@@ -11,28 +12,44 @@ const Technology = () => (
       </p>
       <ol className={styles.list}>
         <li className={styles.item1}>
-          <h2 className={styles.itemTitle}>QRepublik ID</h2>
-          <p className={styles.itemDescription}>
-            Неэлектронные QR-идентификаторы для экстренных ситуаций
-          </p>
+          <Link href="/technology/id">
+            <a className={styles.link}>
+              <h2 className={styles.itemTitle}>QRepublik ID</h2>
+              <p className={styles.itemDescription}>
+                Неэлектронные QR-идентификаторы для экстренных ситуаций
+              </p>
+            </a>
+          </Link>
         </li>
         <li className={styles.item2}>
-          <h2 className={styles.itemTitle}>QRepublik Key</h2>
-          <p className={styles.itemDescription}>
-            Система защиты данных на основе полной деперсонализации
-          </p>
+          <Link href="/technology/key">
+            <a className={styles.link}>
+              <h2 className={styles.itemTitle}>QRepublik Key</h2>
+              <p className={styles.itemDescription}>
+                Система защиты данных на основе полной деперсонализации
+              </p>
+            </a>
+          </Link>
         </li>
         <li className={styles.item3}>
-          <h2 className={styles.itemTitle}>QRepublik All</h2>
-          <p className={styles.itemDescription}>
-            Технология распознавания и обработки медицинской информации
-          </p>
+          <Link href="/technology/all">
+            <a className={styles.link}>
+              <h2 className={styles.itemTitle}>QRepublik All</h2>
+              <p className={styles.itemDescription}>
+                Технология распознавания и обработки медицинской информации
+              </p>
+            </a>
+          </Link>
         </li>
         <li className={styles.item4}>
-          <h2 className={styles.itemTitle}>КИ Мониторинг</h2>
-          <p className={styles.itemDescription}>
-            Система для мониторинга пациентов в клинических исследованиях
-          </p>
+          <Link href="/technology/monitoring">
+            <a className={styles.link}>
+              <h2 className={styles.itemTitle}>КИ Мониторинг</h2>
+              <p className={styles.itemDescription}>
+                Система для мониторинга пациентов в клинических исследованиях
+              </p>
+            </a>
+          </Link>
         </li>
       </ol>
     </div>

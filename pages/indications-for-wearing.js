@@ -13,7 +13,7 @@ const IndicationsForWearingPage = () => (
       />
     </Head>
     <Breadcrumbs>
-      <p>Показания для ношения Медицинского удостоверения</p>
+      <a>Показания для ношения Медицинского удостоверения</a>
     </Breadcrumbs>
     <IndicationsForWearing />
   </Layout>
