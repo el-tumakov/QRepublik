@@ -1,0 +1,142 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.technology {
+  margin-top: 38px;
+}
+
+.wrap {
+  @include wrapper;
+
+  background-image: url("../../public/images/technology.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 650px 458px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-top: 55px;
+
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 88px;
+  color: $font-dark;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.description {
+  max-width: 524px;
+  margin-top: 12px;
+
+  font-size: 24px;
+  line-height: 34px;
+  color: $font-main;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  margin-top: 145px;
+  padding: 0;
+
+  list-style: none;
+
+  &:before {
+    content: "";
+
+    order: 1;
+    width: 100%;
+  }
+}
+
+@mixin item {
+  position: relative;
+
+  order: 2;
+  width: 354px;
+  min-height: 322px;
+  margin-top: 81px;
+  padding-top: 189px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  text-align: center;
+
+  border-radius: 12px;
+  box-shadow: 0 0 15px -2px rgba(#000000, 0.07);
+
+  &::before {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 123px;
+    height: 123px;
+    margin-left: -61.5px;
+
+    font-weight: 500;
+    font-size: 66px;
+    color: $main-accent;
+
+    border-radius: 50%;
+    box-shadow: 0 0 15px -2px rgba(#000000, 0.07);
+  }
+}
+
+.item1 {
+  @include item;
+
+  order: 0;
+  margin-top: 0;
+
+  &::before {
+    content: "1";
+  }
+}
+
+.item2 {
+  @include item;
+
+  &::before {
+    content: "2";
+  }
+}
+
+.item3 {
+  @include item;
+
+  &::before {
+    content: "3";
+  }
+}
+
+.item4 {
+  @include item;
+
+  &::before {
+    content: "4";
+  }
+}
+
+.itemTitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: $font-dark;
+}
+
+.itemDescription {
+  font-size: 15px;
+  line-height: 20px;
+  color: $font-main;
+}
