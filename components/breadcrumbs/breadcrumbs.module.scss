@@ -8,8 +8,6 @@
   line-height: 15px;
 
   .mainLink {
-    @include interactive;
-
     margin: 0;
     padding: 0;
 
@@ -24,6 +22,10 @@
     background-image: url("../../public/images/breadcrumbs-arrow.svg");
     background-repeat: no-repeat;
     background-position: 0 center;
+  }
+
+  a[href] {
+    @include interactive;
   }
 }
 

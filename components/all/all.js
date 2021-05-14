@@ -2,7 +2,7 @@ import styles from "./all.module.scss";
 
 const All = () => (
   <section className={styles.all}>
-    <h1 className="visually-hidden">Работа с данными QRepublik</h1>
+    <h1 className="visually-hidden">QRepublik All</h1>
     <div className={styles.wrap}>
       <ul className={styles.list}>
         <li className={styles.itemLanguages}>

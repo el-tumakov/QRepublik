@@ -1,0 +1,139 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.key {
+  margin-top: 50px;
+
+  p {
+    margin-bottom: 27px;
+
+    font-size: 24px;
+    line-height: 34px;
+    color: $font-main;
+  }
+}
+
+.wrap {
+  @include wrapper;
+}
+
+.header {
+  min-height: 450px;
+
+  background-image: url("../../public/images/technology-key-header.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 600px 450px;
+}
+
+.title {
+  max-width: 597px;
+  margin-top: 0;
+  margin-bottom: 21px;
+  padding-top: 61px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 56px;
+  color: $font-dark;
+}
+
+.accent {
+  color: $second-accent;
+}
+
+.description {
+  max-width: 452px;
+}
+
+.subTitle {
+  margin-top: 129px;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: center;
+  color: $font-dark;
+}
+
+.list {
+  margin: 0;
+  margin-top: 116px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.item1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 857px;
+
+  background-image: url("../../public/images/technology-key-1.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 596px 439px;
+
+  .itemTitle {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  p {
+    max-width: 588px;
+  }
+}
+
+.item2 {
+  min-height: 434px;
+  margin-top: 200px;
+  padding-left: 821px;
+
+  background-image: url("../../public/images/technology-key-2.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 699px 434px;
+}
+
+.item3 {
+  min-height: 450px;
+  margin-top: 200px;
+
+  background-image: url("../../public/images/technology-key-3.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 600px 450px;
+
+  p {
+    max-width: 498px;
+  }
+}
+
+.item4 {
+  min-height: 441px;
+  margin-top: 200px;
+  padding-left: 733px;
+
+  background-image: url("../../public/images/technology-key-4.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 591px 441px;
+
+  p {
+    max-width: 498px;
+  }
+}
+
+.itemTitle {
+  max-width: 597px;
+  margin-top: 0;
+  margin-bottom: 22px;
+  padding-top: 61px;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 56px;
+  color: $font-dark;
+}
