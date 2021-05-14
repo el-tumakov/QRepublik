@@ -59,7 +59,7 @@ const Navigation = (props) => {
         <NavigationTab className={styles.about} title="О компании">
           <ul className={styles.tabList}>
             <li className={styles.tabItem}>
-              <Link href="#">
+              <Link href="/manual">
                 <a className={styles.tabLink}>Инструкция</a>
               </Link>
             </li>

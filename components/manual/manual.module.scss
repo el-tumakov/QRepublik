@@ -1,0 +1,146 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.manual {
+  margin-top: 50px;
+}
+
+.wrap {
+  @include wrapper;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin item {
+  width: 100%;
+  min-height: 380px;
+  margin-bottom: 80px;
+  padding-top: 20px;
+  padding-left: 240px;
+
+  background-repeat: no-repeat;
+}
+
+.item1,
+.item2,
+.item3,
+.item4,
+.item5 {
+  @include item;
+}
+
+.item1 {
+  background-image: url("../../public/images/item-1.svg"),
+  url("../../public/images/manual-step-1@1x.png");
+  background-position: 0 0, right 105px center;
+  background-size: 158px 146px, 259px 340px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../public/images/item-1.svg"),
+    url("../../public/images/manual-step-1@2x.png");
+  }
+}
+
+.item2 {
+  background-image: url("../../public/images/item-2.svg"),
+  url("../../public/images/manual-step-2@1x.png");
+  background-position: 0 0, right 105px center;
+  background-size: 179px 138px, 259px 340px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../public/images/item-2.svg"),
+    url("../../public/images/manual-step-2@2x.png");
+  }
+}
+
+.item3 {
+  background-image: url("../../public/images/item-3.svg"),
+  url("../../public/images/manual-step-3@1x.png");
+  background-position: 0 0, right 105px center;
+  background-size: 178px 127px, 259px 340px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../public/images/item-3.svg"),
+    url("../../public/images/manual-step-3@2x.png");
+  }
+}
+
+.item4 {
+  background-image: url("../../public/images/item-4.svg"),
+  url("../../public/images/manual-step-4@1x.png");
+  background-position: 0 0, right 105px center;
+  background-size: 150px 150px, 259px 340px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../public/images/item-4.svg"),
+    url("../../public/images/manual-step-4@2x.png");
+  }
+}
+
+.item5 {
+  background-image: url("../../public/images/item-5.svg"),
+  url("../../public/images/manual-step-5@1x.png");
+  background-position: 0 0, right 105px center;
+  background-size: 180px 160px, 259px 340px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../public/images/item-5.svg"),
+    url("../../public/images/manual-step-5@2x.png");
+  }
+}
+
+.itemTitle {
+  max-width: 535px;
+  margin-top: 0;
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 55px;
+  color: $font-dark;
+}
+
+.itemDescription {
+  max-width: 535px;
+
+  font-size: 24px;
+  line-height: 34px;
+  color: $font-main;
+}
+
+@media (max-width: 1319px) {
+  .itemTitle,
+  .itemDescription {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1189px) {
+  @mixin item {
+    padding-top: 180px;
+    padding-bottom: 360px;
+    padding-left: 0;
+    overflow: hidden;
+
+    text-align: center;
+
+    background-position: center 0, calc(50% - 35px) 100%;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4,
+  .item5 {
+    @include item;
+  }
+
+  .itemTitle,
+  .itemDescription {
+    max-width: 100%;
+  }
+}
