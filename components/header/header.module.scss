@@ -18,6 +18,9 @@
 .logo {
   @include interactive;
 
+  position: relative;
+  z-index: 3;
+
   flex-shrink: 0;
 }
 
@@ -26,6 +29,7 @@
 
   position: absolute;
   right: 392px;
+  z-index: 3;
 
   padding: 0;
   padding-right: 18px;
@@ -43,12 +47,18 @@
   cursor: pointer;
 }
 
-.menu {
+.menu,
+.menuOpened {
+  position: relative;
+  z-index: 3;
+
   display: none;
 }
 
 @media (max-width: 1229px) {
   .wrap {
+    position: static;
+
     justify-content: flex-start;
   }
 

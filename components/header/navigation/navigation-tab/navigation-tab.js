@@ -11,14 +11,13 @@ const NavigationTab = (props) => {
   };
 
   return (
-    <li className={className}>
+    <li className={className} onClick={handleClick}>
       <div className={styles.topWrap}>
         <p className={styles.itemTitle}>{title}</p>
         <button
           className={isTabOpen ? styles.buttonClose : styles.buttonOpen}
           type="button"
           aria-label={`${isTabOpen ? "Скрыть список" : "Показать список"}`}
-          onClick={handleClick}
         ></button>
       </div>
       <div className={isTabOpen ? styles.content : styles.contentHidden}>
