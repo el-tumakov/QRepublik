@@ -11,14 +11,13 @@ const FaqTab = (props) => {
   };
 
   return (
-    <li className={styles.item}>
+    <li className={styles.item} onClick={handleClick}>
       <div className={styles.topWrap}>
         <h2 className={styles.itemTitle}>{title}</h2>
         <button
           className={isTabOpen ? styles.buttonClose : styles.buttonOpen}
           type="button"
           aria-label={`${isTabOpen ? "Скрыть ответ" : "Показать ответ"}`}
-          onClick={handleClick}
         ></button>
       </div>
       <div className={isTabOpen ? styles.content : styles.contentHidden}>

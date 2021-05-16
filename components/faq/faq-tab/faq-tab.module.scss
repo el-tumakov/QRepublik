@@ -2,12 +2,15 @@
 @import "../../../styles/mixins.scss";
 
 .item {
+  @include interactive;
+
   min-height: 111px;
   padding-top: 37px;
   padding-bottom: 40px;
   overflow: hidden;
 
   border-bottom: 1px solid $border-section;
+  cursor: pointer;
 
   &:last-child {
     border-bottom: none;
