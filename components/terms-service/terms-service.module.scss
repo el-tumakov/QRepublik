@@ -6,6 +6,17 @@
   line-height: 28px;
   color: $font-main;
 
+  background-image: url("../../public/images/terms-service-background-left1-desktop.svg"),
+  url("../../public/images/terms-service-background-left2-desktop.svg"),
+  url("../../public/images/terms-service-background-left3-desktop.svg"),
+  url("../../public/images/terms-service-background-right1-desktop.svg"),
+  url("../../public/images/terms-service-background-right2-desktop.svg"),
+  url("../../public/images/terms-service-background-right3-desktop.svg"),
+  url("../../public/images/terms-service-background-right4-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 880px, 0 2700px, 0 4500px, right 0 top 285px,
+  right 0 top 1570px, right 0 top 3400px, right 0 top 5550px;
+
   b {
     color: $font-dark;
   }
@@ -32,5 +43,15 @@
 @media (max-width: $tablet-width) {
   .terms {
     text-align: center;
+
+    background-image: url("../../public/images/terms-service-background-left1-mobile.svg"),
+    url("../../public/images/terms-service-background-left2-mobile.svg"),
+    url("../../public/images/terms-service-background-left3-mobile.svg"),
+    url("../../public/images/terms-service-background-right1-mobile.svg"),
+    url("../../public/images/terms-service-background-right2-mobile.svg"),
+    url("../../public/images/terms-service-background-right3-mobile.svg"),
+    url("../../public/images/terms-service-background-right4-mobile.svg");
+    background-position: 0 1075px, 0 2576px, 0 4729px, right 0 top 278px,
+    right 0 top 1751px, right 0 top 3505px, right 0 top 5241px;
   }
 }

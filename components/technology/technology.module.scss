@@ -3,6 +3,10 @@
 
 .technology {
   margin-top: 38px;
+
+  background-image: url("../../public/images/technology-background-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100%;
 }
 
 .wrap {
@@ -56,12 +60,11 @@
   }
 }
 
-@mixin item {
-}
-
 .item1 {
   order: 0;
   margin-top: 0;
+
+  background: #ffffff;
 }
 
 .item2,
@@ -69,6 +72,8 @@
 .item4 {
   order: 2;
   margin-top: 81px;
+
+  background: #ffffff;
 }
 
 .link {

@@ -1,6 +1,13 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
+.detail {
+  background-image: url("../../public/images/detail-sos-background-left-desktop.svg"),
+  url("../../public/images/detail-sos-background-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0, right 0 top 130px;
+}
+
 .wrap {
   @include wrapper;
 
@@ -69,6 +76,12 @@
 }
 
 @media (max-width: $tablet-width) {
+  .detail {
+    background-image: url("../../public/images/detail-sos-background-left-mobile.svg"),
+    url("../../public/images/detail-sos-background-right-mobile.svg");
+    background-position: left 0 bottom 500px, right 0 top 550px;
+  }
+
   .wrap {
     padding-bottom: 320px;
 

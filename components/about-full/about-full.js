@@ -2,10 +2,10 @@ import styles from "./about-full.module.scss";
 
 const AboutFull = () => (
   <section className={styles.about}>
-    <h1 className={styles.title}>
-      О <span className={styles.accent}>Нас</span>
-    </h1>
     <div className={styles.wrap}>
+      <h1 className={styles.title}>
+        О <span className={styles.accent}>Нас</span>
+      </h1>
       <div className={styles.textWrap}>
         <div className={styles.leftSide}>
           <p>

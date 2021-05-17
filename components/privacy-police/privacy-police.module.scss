@@ -6,6 +6,10 @@
   line-height: 28px;
   color: $font-main;
 
+  background-image: url("../../public/images/privacy-police-background-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 100% -120px;
+
   b {
     color: $font-dark;
   }
@@ -26,5 +30,8 @@
 @media (max-width: $tablet-width) {
   .privacy {
     text-align: center;
+
+    background-image: url("../../public/images/privacy-police-background-right-mobile.svg");
+    background-position: 100% 278px;
   }
 }

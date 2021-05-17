@@ -47,7 +47,7 @@ const Social = (props) => {
 };
 
 Social.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 };
 
 export default Social;

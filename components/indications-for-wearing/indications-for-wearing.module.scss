@@ -2,9 +2,28 @@
 @import "../../styles/mixins.scss";
 
 .indications {
+  position: relative;
+
   font-size: 18px;
   line-height: 28px;
   color: $font-main;
+
+  background-image: url("../../public/images/indications-background-left-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -570px;
+
+    width: 177px;
+    height: 887px;
+
+    background-image: url("../../public/images/indications-background-right-desktop.svg");
+    background-repeat: no-repeat;
+  }
 
   b {
     color: $font-dark;
@@ -26,5 +45,13 @@
 @media (max-width: $tablet-width) {
   .indications {
     text-align: center;
+
+    background-image: url("../../public/images/indications-background-left-mobile.svg"),
+    url("../../public/images/indications-background-right-mobile.svg");
+    background-position: left 0 bottom 143px, 100% 460px;
+
+    &::before {
+      display: none;
+    }
   }
 }

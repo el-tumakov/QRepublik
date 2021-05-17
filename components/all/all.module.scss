@@ -1,6 +1,13 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
+.all {
+  background-image: url("../../public/images/technology-all-background-left-desktop.svg"),
+  url("../../public/images/technology-all-background-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 100px, right 0 top 720px;
+}
+
 .wrap {
   @include wrapper;
 }

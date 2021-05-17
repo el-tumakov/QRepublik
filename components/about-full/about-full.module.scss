@@ -2,10 +2,15 @@
 @import "../../styles/mixins.scss";
 
 .about {
-  @include wrapper;
+  background-image: url("../../public/images/about-full-background-left-desktop.svg"),
+  url("../../public/images/about-full-background-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0, right 0 bottom -310px;
 }
 
 .wrap {
+  @include wrapper;
+
   padding-bottom: 160px;
 
   background-image: url("../../public/images/about-background-desktop@1x.jpg");
@@ -111,14 +116,13 @@
 }
 
 @media (max-width: $tablet-width) {
-  .wrap {
-    background-image: url("../../public/images/about-background-mobile@1x.jpg");
-    background-position: center bottom 310px;
-    background-size: 296px 243px;
+  .about {
+    background-image: url("../../public/images/about-full-background-right-mobile.svg");
+    background-position: right 0 bottom 230px;
+  }
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../public/images/about-background-mobile@2x.jpg");
-    }
+  .wrap {
+    background: none;
   }
 
   .textWrap {
@@ -126,8 +130,24 @@
     line-height: 26px;
   }
 
+  .leftSide,
+  .rightSide {
+    width: auto;
+  }
+
   .quoteWrap {
-    margin-top: 260px;
+    width: auto;
+    margin-top: 0;
+    padding-top: 260px;
+
+    background-image: url("../../public/images/about-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top 0;
+    background-size: 296px 243px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../public/images/about-background-mobile@2x.jpg");
+    }
   }
 
   .letterTitle {
